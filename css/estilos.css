@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  width: 100%;
+}
+:root{
+  --color-fondo--1:rgb(235, 241, 242);
+  --color-fondo--2:rgb(240, 228, 240);
+  --color-fondo--3:rgb(247, 240, 247);
+}
+p{
+  font-family: 'Love Ya Like A Sister';
+}
+h1{
+  font-family: 'DM Serif Text';
+}
+header{
+  background: brown;
+  text-align: center;
+  color :white;
+}
+
+header nav ul li{
+  list-style-type: none;
+  display:inline;
+  margin:5px;
+}
+
+header a{
+  color:white;
+  text-decoration: none;
+}
+header a:hover{
+  text-decoration: underline;
+  color:yellow;
+}
+.principal{
+  background-image: url(../images/inicial2.JPG);
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+.contenido{
+  padding:10px;
+}
+.principal .contenido {
+  text-align: left;
+  background:lightblue;
+  padding-top: 30px;
+  width: 50%;
+  position:relative;
+  margin: 0 auto ;
+  border-radius: 10px;
+}
+.descripcion{
+  text-align:center;
+}
+.descripcion h2{
+  font-size: 4em;
+}
+#parque{
+  background: var(--color-fondo--1);
+}
+#rio{
+  background: var(--color-fondo--2);
+}
+#playa{
+  background: var(--color-fondo--3);
+}
+.imagen-principal{
+  display:none;
+}
+.imagen-secundaria,.imagen-principal{
+  width:50%;
+  margin:10px auto;
+  
+}
+.imagen-secundaria:hover,.imagen-principal:hover{
+transform: scale(1.5,1.5);
+-webkit-transform: scale(1.5,1.5);
+filter:grayscale(50%);
+-webkit-filter: grayscale(50%)
+}
+  footer {
+  text-align:center;
+  word-spacing: 0.5em;
+}
+footer .tel{
+  margin:7% 0;
+}
+
+footer .contacto{
+  width:90%;
+  border:3px solid rgb(230, 202, 230);
+  padding:10px;
+  margin:0 auto;
+  background: rgb(240, 228, 240);
+}
+
+footer .contacto input, footer .contacto textarea{
+  border:3px solid rgb(230, 202, 230);
+  width: 90%;
+}
+footer .contacto button{
+  margin:5% auto;
+  background:rgb(219, 165, 118);
+  font-size:20px; 
+  width: 15%;
+  border-radius:10px;
+}
+
+@media (min-width:768px){
+  header,footer,.lugar{
+    overflow: hidden;
+  }
+  header h1{
+    text-align: left;
+    width: 50%;
+    
+  }
+  header nav { 
+    float:right;
+    width: 50%;
+  }
+  .lugar .descripcion{
+    float: left;
+    width: 50%;
+    padding: 50px 0;
+  }
+  .lugar .imagen-secundaria{
+    float: right;
+  }
+  .lugar img{
+    border-radius: 20px;
+  }
+  footer{
+    margin-top:10px;
+  }
+  footer .contacto{
+    width: 50%;
+    float: right;
+  }  
+  footer .informacion{
+    width: 45%;
+    float:left;
+  }
+}
+
+@media screen and (min-width:900px){
+  header h1{
+    text-align: left;
+    width: 100%;
+  }
+  .lugar .imagen-principal{
+    display:block;
+    width:25%;
+    float:left;
+    margin-left: 3%;
+    
+  }
+  
+  .lugar .descripcion{
+    width: 30%;
+    text-align:center;
+    padding:5%;
+  }
+  .lugar .imagen-secundaria{
+    width:25%;
+    margin-right: 3%;
+  }
+  footer .contacto{
+    text-align:left
+  }
+  footer .contacto input,footer .contacto textarea{
+    width:80%;
+  }
+}
